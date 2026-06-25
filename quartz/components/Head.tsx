@@ -120,11 +120,13 @@ export default (() => {
         <script>{`
           (function(){
             if(localStorage.getItem('cc'))return
-            var b=document.createElement('div')
-            b.id='cookie-banner'
-            b.innerHTML='<div class="cookie-wrap"><p>Этот сайт использует куки и собирает обезличенные данные для работы аналитики. Продолжая использовать сайт, вы соглашаетесь с <a href="${privacyUrl}">политикой конфиденциальности</a>.</p><button class="cookie-btn" id="cookie-accept">Принять</button></div>'
-            document.body.appendChild(b)
-            document.getElementById('cookie-accept').onclick=function(){b.classList.add('hidden');localStorage.setItem('cc','1')}
+            var b=document.createElement('div'),w=document.createElement('div'),p=document.createElement('p'),a=document.createElement('a'),btn=document.createElement('button')
+            b.id='cookie-banner';w.className='cookie-wrap'
+            p.appendChild(document.createTextNode('Этот сайт использует куки. Продолжая использовать сайт, вы соглашаетесь с '))
+            a.href='${privacyUrl}';a.textContent='политикой конфиденциальности';p.appendChild(a)
+            btn.className='cookie-btn';btn.textContent='Принять'
+            btn.onclick=function(){b.classList.add('hidden');localStorage.setItem('cc','1')}
+            w.appendChild(p);w.appendChild(btn);b.appendChild(w);document.body.appendChild(b)
           })()
         `}</script>
       </head>
