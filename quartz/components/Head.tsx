@@ -120,13 +120,16 @@ export default (() => {
         <script>{`
           (function(){
             if(localStorage.getItem('cc'))return
-            var b=document.createElement('div'),w=document.createElement('div'),p=document.createElement('p'),a=document.createElement('a'),btn=document.createElement('button')
-            b.id='cookie-banner';w.className='cookie-wrap'
-            p.appendChild(document.createTextNode('Этот сайт использует куки. Продолжая использовать сайт, вы соглашаетесь с '))
-            a.href='${privacyUrl}';a.textContent='политикой конфиденциальности';p.appendChild(a)
-            btn.className='cookie-btn';btn.textContent='Принять'
-            btn.onclick=function(){b.classList.add('hidden');localStorage.setItem('cc','1')}
-            w.appendChild(p);w.appendChild(btn);b.appendChild(w);document.body.appendChild(b)
+            function init(){
+              var b=document.createElement('div'),w=document.createElement('div'),p=document.createElement('p'),a=document.createElement('a'),btn=document.createElement('button')
+              b.id='cookie-banner';w.className='cookie-wrap'
+              p.appendChild(document.createTextNode('Этот сайт использует куки. Продолжая использовать сайт, вы соглашаетесь с '))
+              a.href='${privacyUrl}';a.textContent='политикой конфиденциальности';p.appendChild(a)
+              btn.className='cookie-btn';btn.textContent='Принять'
+              btn.onclick=function(){b.classList.add('hidden');localStorage.setItem('cc','1')}
+              w.appendChild(p);w.appendChild(btn);b.appendChild(w);document.body.appendChild(b)
+            }
+            if(document.body)init();else document.addEventListener('DOMContentLoaded',init)
           })()
         `}</script>
       </head>
