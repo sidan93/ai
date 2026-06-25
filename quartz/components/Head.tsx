@@ -36,6 +36,8 @@ export default (() => {
     )
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
 
+    const privacyUrl = `https://${cfg.baseUrl}/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8`
+
     const coreStylesheet = css[0]?.content
     const coreScript = js.find(
       (r) => r.loadTime === "beforeDOMReady" && r.contentType === "external",
@@ -106,6 +108,25 @@ export default (() => {
             return resource
           }
         })}
+        <style>{`
+          #cookie-banner{position:fixed;bottom:0;left:0;right:0;background:var(--light);border-top:1px solid var(--lightgray);padding:1rem 1.5rem;z-index:9999;font-size:.875rem;color:var(--darkgray);box-shadow:0 -2px 10px rgba(0,0,0,.1)}
+          #cookie-banner.hidden{display:none}
+          .cookie-wrap{max-width:800px;margin:0 auto;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;justify-content:space-between}
+          .cookie-wrap p{margin:0;flex:1 1 300px;line-height:1.5}
+          .cookie-wrap a{color:var(--secondary);text-decoration:underline}
+          .cookie-btn{background:var(--secondary);color:#fff;border:none;padding:.5rem 1.5rem;border-radius:4px;cursor:pointer;font-size:.875rem;font-weight:600;white-space:nowrap}
+          .cookie-btn:hover{opacity:.85}
+        `}</style>
+        <script>{`
+          (function(){
+            if(localStorage.getItem('cc'))return
+            var b=document.createElement('div')
+            b.id='cookie-banner'
+            b.innerHTML='<div class="cookie-wrap"><p>Этот сайт использует куки и собирает обезличенные данные для работы аналитики. Продолжая использовать сайт, вы соглашаетесь с <a href="${privacyUrl}">политикой конфиденциальности</a>.</p><button class="cookie-btn" id="cookie-accept">Принять</button></div>'
+            document.body.appendChild(b)
+            document.getElementById('cookie-accept').onclick=function(){b.classList.add('hidden');localStorage.setItem('cc','1')}
+          })()
+        `}</script>
       </head>
     )
   }
