@@ -4,10 +4,11 @@
 
 VAULT="/Users/andrey.sidorov/Documents/Obsidian Vault/AI"
 CONTENT="./content"
+INDEX_SRC="$VAULT/!Home.md"
 
 echo "Syncing from vault..."
 
-# Удаляем старый контент (но сохраняем .gitkeep если есть)
+# Удаляем старый контент
 if [ -d "$CONTENT" ]; then
     find "$CONTENT" -mindepth 1 -delete
 fi
@@ -15,5 +16,13 @@ fi
 # Копируем публичные заметки
 cp -r "$VAULT"/* "$CONTENT"/
 
-echo "Done! Run: npx quartz build --serve  (preview)"
-echo "Then:  git add content && git commit -m 'publish' && git push"
+# Создаём index.md из !Home.md (Quartz не понимает ! как главную)
+if [ -f "$INDEX_SRC" ]; then
+    cp "$INDEX_SRC" "$CONTENT/index.md"
+    echo "✓ index.md → from !Home.md"
+fi
+
+echo ""
+echo "Done! Next:"
+echo "  npx quartz build --serve   (preview)"
+echo "  git add content && git commit -m 'publish' && git push"
