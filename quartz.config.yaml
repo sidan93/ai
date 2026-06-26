@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: ru-RU
-  baseUrl: sidan93.github.io/ai
+  baseUrl: ai.absidorov.ru
   ignorePatterns:
     - private
     - templates
