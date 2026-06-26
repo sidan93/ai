@@ -123,7 +123,7 @@ export default (() => {
             function init(){
               var b=document.createElement('div'),w=document.createElement('div'),p=document.createElement('p'),a=document.createElement('a'),btn=document.createElement('button')
               b.id='cookie-banner';w.className='cookie-wrap'
-              p.appendChild(document.createTextNode('Этот сайт использует куки. Продолжая использовать сайт, вы соглашаетесь с '))
+              p.appendChild(document.createTextNode('Этот сайт использует Яндекс.Метрику и cookie-файлы для аналитики. Продолжая использовать сайт, вы соглашаетесь с '))
               a.href='${privacyUrl}';a.textContent='политикой конфиденциальности';p.appendChild(a)
               btn.className='cookie-btn';btn.textContent='Принять'
               btn.onclick=function(){b.classList.add('hidden');localStorage.setItem('cc','1')}
@@ -132,6 +132,10 @@ export default (() => {
             if(document.body)init();else document.addEventListener('DOMContentLoaded',init)
           })()
         `}</script>
+        <script type="text/javascript">{`
+          (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(110162866,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true})
+        `}</script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/110162866" style="position:absolute;left:-9999px" alt="" /></div></noscript>
       </head>
     )
   }
