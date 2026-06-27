@@ -80,8 +80,8 @@ response = query_engine.query("В чем суть технологии Harness?"
 
 ## 🔗 Связи и Контекст
 
-* [[01. Понятия и Модели/AI Stack 2026|AI Stack 2026]]
-* [[10. Статьи и Разборы/2026-04-16 - Prompt Caching - Полный перевод треда|Prompt Caching]] — критически важен для RAG в LlamaIndex, чтобы не платить за повторную загрузку контекста.
-* [[03. Конструктор Агентов/Фреймворки/LangChain|LangChain]] — сравнение: используйте LlamaIndex для данных, а LangChain для сложных цепочек действий.
+* [[AI Stack 2026]]
+* [[004. 2026-04-16 - Prompt Caching|Prompt Caching]] — критически важен для RAG в LlamaIndex, чтобы не платить за повторную загрузку контекста.
+* [[LangChain]] — сравнение: используйте LlamaIndex для данных, а LangChain для сложных цепочек действий.
 
 **Теги:** #LlamaIndex #RAG #DataFramework #AI_Search #KnowledgeManagement #VectorDB
