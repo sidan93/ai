@@ -61,6 +61,18 @@ curl -o CLAUDE.md https://raw.githubusercontent.com/sidan93/claude-eng-loop/main
 
 ---
 
+## Публикации
+
+| Платформа | Ссылка |
+|-----------|--------|
+| GitHub | [sidan93/claude-eng-loop](https://github.com/sidan93/claude-eng-loop) |
+| Reddit r/PromptEngineering | [Controlling Claude Code: a 9-phase system prompt](https://www.reddit.com/r/PromptEngineering/comments/1udjmaz/controlling_claude_code_a_9phase_system_prompt/) |
+| Reddit r/ClaudeAI | [Claude Engineering Loop: 9-phase workflow](https://www.reddit.com/r/ClaudeAI/comments/1udhbtr/claude_engineering_loop_9phase_workflow_in_one/) |
+| Hacker News | [HN discussion](https://news.ycombinator.com/item?id=48644504) |
+| LinkedIn | [Post](https://www.linkedin.com/feed/update/urn:li:activity:7475186476368986112/) |
+
+---
+
 ## 🔗 Связи
 - [[Быстрый старт Claude Code]] — установка и базовая настройка
 - [[Инструкция по эксплуатации]] — общий операционный подход к работе с агентами
