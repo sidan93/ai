@@ -4,6 +4,7 @@ tags:
   - frameworks
   - agents
   - index
+created: 2026-04-16
 ---
 
 # 🛠️ Фреймворки для создания ИИ-агентов
@@ -55,8 +56,8 @@ tags:
 ---
 
 ## 🔗 Связи
-- [[01. Понятия и Модели/AI Stack 2026|Общий стек технологий]]
-- [[10. Статьи и Разборы/2026-04-16 - Your AI Isnt Stupid - It Just Needs a Better Harness|Harness Engineering]]
-- [[03. Конструктор Агентов/Skills/_Skills Index|Библиотека навыков агентов]]
+- [[AI Stack 2026|Общий стек технологий]]
+- [[003. 2026-04-16 - Harness Engineering - Your AI Isnt Stupid - Lychee Blog|Harness Engineering]]
+- [[_Skills Index|Библиотека навыков агентов]]
 
 **Теги:** #Frameworks #AgentArchitecture #ToolSelection #Index #AI_Engineering

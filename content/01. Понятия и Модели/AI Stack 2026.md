@@ -4,6 +4,8 @@ tags:
   - AI_Stack
   - architecture
   - index
+created: 2026-04-15
+updated: 2026-07-07
 ---
 
 # 🏗️ AI Stack (2026 Edition): Карта Индустрии
@@ -24,11 +26,11 @@ tags:
 ┃ ┗  [[Mistral AI]]
 ┃
 ┣  **LLM APIs (Модели)**
-┃ ┣  [[GPT-4o]]
-┃ ┣  [[Claude 3.5 Sonnet]]
-┃ ┣  [[Gemini 1.5 Pro]]
-┃ ┣  [[LLaMA 3]]
-┃ ┗  [[Mixtral]]
+┃ ┣  [[GPT-5.4]]
+┃ ┣  [[Claude Opus 4.8]]
+┃ ┣  [[Gemini 3.1 Pro]]
+┃ ┣  [[Llama 4]]
+┃ ┗  [[DeepSeek V3.2]]
 ┃
 ┣  **[[_Frameworks Index|AI Agents (Фреймворки)]]**
 ┃ ┣  [[LangChain]]
@@ -121,9 +123,9 @@ tags:
 
 ## 📈 Актуальные связки (2026)
 
-* **Экономный Агент:** [[Claude 3.5 Sonnet]] + [[004. 2026-04-16 - Prompt Caching|Prompt Caching]] + [[n8n]]
+* **Экономный Агент:** [[Claude Sonnet 4.6]] + [[004. 2026-04-16 - Prompt Caching|Prompt Caching]] + [[n8n]]
 * **Reliable RAG:** [[Qdrant]] + [[RAG (Retrieval-Augmented Generation)]] + [[Guardrails AI]]
-* **Аналитический мозг:** [[Gemini 1.5 Pro]] (за счет 2M контекста) + [[Weights & Biases]]
+* **Аналитический мозг:** [[Gemini 3.1 Pro]] (за счет 2M+ контекста) + [[Weights & Biases]]
 
 ---
 **Смотреть также:**
