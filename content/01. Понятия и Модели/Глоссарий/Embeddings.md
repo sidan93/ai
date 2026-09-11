@@ -32,4 +32,4 @@ created: 2026-04-15
 ---
 ## Связанные концепции
 - [[RAG (Retrieval-Augmented Generation)]]
-- [[Vector Databases]]
+- Векторные базы данных — один из способов хранить и искать embeddings.

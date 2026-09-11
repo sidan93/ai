@@ -5,129 +5,73 @@ tags:
   - architecture
   - index
 created: 2026-04-15
-updated: 2026-07-07
+updated: 2026-09-10
+status: evergreen
 ---
 
-# 🏗️ AI Stack (2026 Edition): Карта Индустрии
+# AI Stack: карта системы
 
-> [!info] Суть страницы
-> Глобальная карта технологий. Это твой "Wishlist" и ориентир. Даже если страницы нет в базе, она должна быть здесь для полноты картины.
+> [!abstract] Суть
+> AI-приложение — не одна модель, а набор слоёв. Эта карта помогает понять, где находится проблема: в модели, данных, инструментах, оркестрации, интерфейсе или эксплуатации.
 
----
+## Слои
 
-## 🌳 Дерево Стека
+| Слой | За что отвечает | Примеры |
+| :--- | :--- | :--- |
+| Модели | Генерация, рассуждение, multimodal input/output | GPT, Claude, Gemini, DeepSeek, Llama, Mistral |
+| Доступ к моделям | API или локальный runtime | OpenAI API, Anthropic API, [[Ollama]], [[LM Studio]], llama.cpp |
+| Инструкции | Задача, правила и формат ответа | [[System Prompt]], few-shot, structured output |
+| Контекст и знания | Данные текущего запроса и найденные документы | [[Context Window]], [[RAG]], embeddings, vector/keyword search |
+| Инструменты | Действия во внешних системах | [[Tool Use Function Calling]], [[MCP (Model Context Protocol)]] |
+| Оркестрация | Циклы, состояние, ветвления и остановка | [[Harness]], [[LangChain]], LangGraph, [[LlamaIndex]], [[AutoGen]] |
+| Качество | Тесты, evals, трассировка и ручная проверка | [[LLM-as-a-Judge]], deterministic checks, observability |
+| Безопасность | Права, изоляция, подтверждения и защита данных | [[Indirect Prompt Injection]], [[Протоколы Автономности]] |
+| Интерфейс | Способ работы человека с системой | Chat, IDE, CLI, web UI, голос |
+| Эксплуатация | Стоимость, задержка, масштабирование и мониторинг | caching, batch, rate limits, deployment |
 
-┃
-┣  **AI Models (Вендоры)**
-┃ ┣  [[OpenAI]]
-┃ ┣  [[Anthropic]]
-┃ ┣  [[Google DeepMind]]
-┃ ┣  [[Meta AI]]
-┃ ┗  [[Mistral AI]]
-┃
-┣  **LLM APIs (Модели)**
-┃ ┣  [[GPT-5.4]]
-┃ ┣  [[Claude Opus 4.8]]
-┃ ┣  [[Gemini 3.1 Pro]]
-┃ ┣  [[Llama 4]]
-┃ ┗  [[DeepSeek V3.2]]
-┃
-┣  **[[_Frameworks Index|AI Agents (Фреймворки)]]**
-┃ ┣  [[LangChain]]
-┃ ┣  [[LlamaIndex]]
-┃ ┣  [[AutoGen]]
-┃ ┣  [[CrewAI]]
-┃ ┗  [[Haystack]]
-┃
-┣  **Vector Databases (Память)**
-┃ ┣  [[Pinecone]]
-┃ ┣  [[Weaviate]]
-┃ ┣  [[Qdrant]]
-┃ ┣  [[Milvus]]
-┃ ┗  [[Chroma]]
-┃
-┣  **RAG (Retrieval-Augmented Generation)**
-┃ ┣  [[LangChain RAG]]
-┃ ┣  [[LlamaIndex RAG]]
-┃ ┣  [[Haystack RAG]]
-┃ ┣  [[Vectara]]
-┃ ┗  [[Elastic RAG]]
-┃
-┣  **AI Deployment (Инфраструктура)**
-┃ ┣  [[Replicate]]
-┃ ┣  [[Modal]]
-┃ ┣  [[RunPod]]
-┃ ┣  [[Hugging Face]]
-┃ ┗  [[AWS SageMaker]]
-┃
-┣  **Fine-Tuning (Дообучение)**
-┃ ┣  [[LoRA]]
-┃ ┣  [[QLoRA]]
-┃ ┣  [[PEFT]]
-┃ ┣  [[OpenAI Fine-tuning]]
-┃ ┗  [[Axolotl]]
-┃
-┣  **AI Observability (Мониторинг)**
-┃ ┣  [[LangSmith]]
-┃ ┣  [[Helicone]]
-┃ ┣  [[PromptLayer]]
-┃ ┣  [[Weights & Biases]]
-┃ ┗  [[Arize AI]]
-┃
-┣  **AI UI / Frontend**
-┃ ┣  [[Vercel AI SDK]]
-┃ ┣  [[Streamlit]]
-┃ ┣  [[Gradio]]
-┃ ┣  [[React]]
-┃ ┗  [[Next.js]]
-┃
-┣  **Multimodal AI (Медиа)**
-┃ ┣  [[DALL·E]]
-┃ ┣  [[Stable Diffusion]]
-┃ ┣  [[Whisper]]
-┃ ┣  [[ElevenLabs]]
-┃ ┗  [[Sora]]
-┃
-┣  **Automation / Workflows**
-┃ ┣  [[Zapier]]
-┃ ┣  [[Make]]
-┃ ┣  [[n8n]]
-┃ ┣  [[Pabbly]]
-┃ ┗  [[Temporal]]
-┃
-┣  **AI Security (Защита)**
-┃ ┣  [[Guardrails AI]]
-┃ ┣  [[Rebuff]]
-┃ ┣  [[Lakera AI]]
-┃ ┣  [[Microsoft Presidio]]
-┃ ┗  [[Cloudflare]]
-┃
-┣  **AI Use Cases (Применение)**
-┃ ┣  [[Chatbots]]
-┃ ┣  [[AI Agents]]
-┃ ┣  [[Code Generation]]
-┃ ┣  [[Content Creation]]
-┃ ┣  [[Video Generation]]
-┃ ┗  [[Voice Assistants]]
-┃
-┗  **Future Trends (Тренды)**
-    ┣  [[Autonomous Agents]]
-    ┣  [[AI Operating Systems]]
-    ┣  [[Real-time AI]]
-    ┣  [[Personal AI Assistants]]
-    ┗  [[AI-native SaaS]]
+## Как читать карту
 
-![[Pasted image 20260420102425.png]]
+### Пример: помощник по базе знаний
 
----
+```text
+Obsidian
+  → индексирование и retrieval
+  → отобранные фрагменты
+  → модель
+  → ответ со ссылками на заметки
+```
 
-## 📈 Актуальные связки (2026)
+Если поиск возвращает плохие фрагменты, смена модели может не решить проблему. Если фрагменты хорошие, но ответ нарушает формат, смотри на инструкции, structured output и evals.
 
-* **Экономный Агент:** [[Claude Sonnet 4.6]] + [[004. 2026-04-16 - Prompt Caching|Prompt Caching]] + [[n8n]]
-* **Reliable RAG:** [[Qdrant]] + [[RAG (Retrieval-Augmented Generation)]] + [[Guardrails AI]]
-* **Аналитический мозг:** [[Gemini 3.1 Pro]] (за счет 2M+ контекста) + [[Weights & Biases]]
+### Пример: агент для кода
 
----
-**Смотреть также:**
-- [[003. 2026-04-16 - Harness Engineering - Your AI Isnt Stupid - Lychee Blog|Harness Engineering]]
-- [[004. 2026-04-16 - Prompt Caching|Prompt Caching]]
+```text
+цель пользователя
+  → харнес читает репозиторий
+  → модель предлагает изменение
+  → инструмент меняет файл
+  → тесты и diff проверяют результат
+  → модель исправляет ошибку или завершает задачу
+```
+
+Надёжность здесь определяется не только моделью, но и правами, качеством инструментов, тестами и условием остановки.
+
+## Типовые архитектуры
+
+- **Простой чат:** интерфейс + модель + системная инструкция.
+- **RAG:** ingestion + индекс + retrieval + модель + цитирование.
+- **Агент:** модель + tools + цикл + состояние + ограничения.
+- **Локальный помощник:** локальный runtime + open-weight модель + UI; облачные инструменты подключаются отдельно.
+- **Production-система:** всё выше плюс evals, observability, контроль стоимости, безопасность и fallback.
+
+## Куда идти дальше
+
+- [[Справочник основных LLM]] — выбор продукта и семейства моделей.
+- [[Справочник LLM API]] — API и стоимость.
+- [[_Glossary Index]] — базовые понятия.
+- [[_Agentic Systems Index]] — агентные системы.
+- [[_Frameworks Index]] — фреймворки.
+- [[_Local AI Index]] — локальный запуск.
+
+> [!note] Почему здесь мало ссылок
+> Wikilinks ведут только на существующие заметки. Названия продуктов без отдельной страницы оставлены обычным текстом, чтобы граф Obsidian не состоял из фиктивных узлов.

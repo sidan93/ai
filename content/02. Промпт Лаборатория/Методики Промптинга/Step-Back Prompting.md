@@ -31,5 +31,5 @@ created: 2026-04-15
 
 ---
 ## Связанные концепции
-- [[Knowledge Synthesis]]
+- [[Atomic Notes]] — как собирать вывод из небольших самостоятельных идей.
 - [[Persona Prompting]]

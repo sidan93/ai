@@ -28,4 +28,4 @@ created: 2026-04-15
 ---
 ## Связанные концепции
 - [[Weights]]
-- [[Local LLM]]
+- [[_Local AI Index|Локальные LLM]]
