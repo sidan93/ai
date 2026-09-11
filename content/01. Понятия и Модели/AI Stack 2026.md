@@ -18,15 +18,15 @@ status: evergreen
 
 | Слой | За что отвечает | Примеры |
 | :--- | :--- | :--- |
-| Модели | Генерация, рассуждение, multimodal input/output | GPT, Claude, Gemini, DeepSeek, Llama, Mistral |
+| Модели | Генерация, рассуждение и [[Multimodality|мультимодальный ввод/вывод]] | GPT, Claude, Gemini, DeepSeek, Llama, Mistral; плотные и [[Mixture of Experts (MoE)|MoE]] |
 | Доступ к моделям | API или локальный runtime | OpenAI API, Anthropic API, [[Ollama]], [[LM Studio]], llama.cpp |
-| Инструкции | Задача, правила и формат ответа | [[System Prompt]], few-shot, structured output |
-| Контекст и знания | Данные текущего запроса и найденные документы | [[Context Window]], [[RAG]], embeddings, vector/keyword search |
+| Инструкции | Задача, правила и формат ответа | [[System Prompt]], few-shot, [[Structured Output]] |
+| Контекст и знания | Данные текущего запроса и найденные документы | [[Context Window]], [[Context Engineering]], [[RAG]], [[Embeddings]], vector/keyword search |
 | Инструменты | Действия во внешних системах | [[Tool Use Function Calling]], [[MCP (Model Context Protocol)]] |
 | Оркестрация | Циклы, состояние, ветвления и остановка | [[Harness]], [[LangChain]], LangGraph, [[LlamaIndex]], [[AutoGen]] |
-| Качество | Тесты, evals, трассировка и ручная проверка | [[LLM-as-a-Judge]], deterministic checks, observability |
-| Безопасность | Права, изоляция, подтверждения и защита данных | [[Indirect Prompt Injection]], [[Протоколы Автономности]] |
-| Интерфейс | Способ работы человека с системой | Chat, IDE, CLI, web UI, голос |
+| Качество | Повторяемые проверки, трассировка и ручная оценка | [[Evals]], [[LLM-as-a-Judge]], deterministic checks, [[Observability and Tracing]] |
+| Безопасность | Права, изоляция, подтверждения и защита данных | [[Guardrails]], [[Indirect Prompt Injection]], [[Протоколы Автономности]] |
+| Интерфейс | Способ работы человека с системой | Chat, IDE, CLI, web UI, голос, [[Computer Use]] |
 | Эксплуатация | Стоимость, задержка, масштабирование и мониторинг | caching, batch, rate limits, deployment |
 
 ## Как читать карту
@@ -41,7 +41,7 @@ Obsidian
   → ответ со ссылками на заметки
 ```
 
-Если поиск возвращает плохие фрагменты, смена модели может не решить проблему. Если фрагменты хорошие, но ответ нарушает формат, смотри на инструкции, structured output и evals.
+Если поиск возвращает плохие фрагменты, смена модели может не решить проблему. Если фрагменты хорошие, но ответ нарушает формат, смотри на инструкции, [[Structured Output|structured output]] и [[Evals|evals]].
 
 ### Пример: агент для кода
 
@@ -62,7 +62,7 @@ Obsidian
 - **RAG:** ingestion + индекс + retrieval + модель + цитирование.
 - **Агент:** модель + tools + цикл + состояние + ограничения.
 - **Локальный помощник:** локальный runtime + open-weight модель + UI; облачные инструменты подключаются отдельно.
-- **Production-система:** всё выше плюс evals, observability, контроль стоимости, безопасность и fallback.
+- **Production-система:** всё выше плюс [[Evals|evals]], [[Observability and Tracing|observability]], контроль стоимости, безопасность и fallback.
 
 ## Куда идти дальше
 
