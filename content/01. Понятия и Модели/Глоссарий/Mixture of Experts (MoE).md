@@ -44,7 +44,7 @@ status: evergreen
 - [[Weights]]
 - [[Inference]]
 - [[Quantization]]
-- [[Hardware]]
+- [[Железо для локальных моделей]]
 
 ## Источник
 

@@ -5,9 +5,9 @@ tags:
   - llm
   - vendors
 created: 2026-04-15
-updated: 2026-09-10
+updated: 2026-09-14
 status: time-sensitive
-review_after: 2026-10-10
+review_after: 2026-10-14
 ---
 
 # Основные ИИ-сервисы и модели
@@ -26,11 +26,11 @@ review_after: 2026-10-10
 | [DeepSeek](https://chat.deepseek.com) | Доступный чат и недорогой API | Важна стоимость; допустимы его регион и политика данных |
 | [Le Chat](https://chat.mistral.ai) | Европейский провайдер и модели Mistral | Нужна альтернатива крупным американским платформам |
 
-## Семейства моделей на 10 сентября 2026
+## Семейства моделей на 14 сентября 2026
 
-- **OpenAI:** GPT-5.6 Sol, Terra и Luna; конкретная доступность зависит от продукта и тарифа.
-- **Anthropic:** Claude Opus 5, Sonnet 5, Fable 5 и другие активные модели.
-- **Google:** семейство Gemini 3.x, включая Gemini 3.8 Flash; preview и stable нужно различать.
+- **OpenAI API:** GPT-6 Astra — флагман для сложного reasoning и кода; GPT-5.6 Terra — баланс возможностей и стоимости; GPT-5.6 Luna — большой поток недорогих запросов. Модель в ChatGPT и API model ID — не одно и то же.
+- **Anthropic:** Claude Opus 5 — универсальная отправная точка; Fable 5.1 — самые сложные долгие задачи; Sonnet 5 и Haiku 4.5 — более быстрые классы.
+- **Google:** Gemini 3.1 Pro, 3.8 Flash и 3.5 Flash-Lite; preview и stable нужно различать.
 - **DeepSeek:** V4 Flash и V4 Pro.
 - **Открытые веса:** выбираются отдельно под железо, движок, лицензию и задачу; см. [[Top_LLM_Index_2026-09]].
 
@@ -47,9 +47,10 @@ review_after: 2026-10-10
 
 ## Официальные источники
 
-- [OpenAI — GPT-5.6](https://openai.com/index/gpt-5-6/)
-- [Anthropic — active and deprecated models](https://docs.anthropic.com/en/docs/about-claude/model-deprecations)
-- [Google — Gemini models](https://ai.google.dev/gemini-api/docs/models)
+- [OpenAI — model catalog](https://developers.openai.com/api/docs/models)
+- [OpenAI — latest model guidance](https://developers.openai.com/api/docs/guides/latest-model)
+- [Anthropic — models overview](https://platform.claude.com/docs/en/models/overview)
+- [Google — Gemini API documentation](https://ai.google.dev/gemini-api/docs)
 - [DeepSeek — API models](https://api-docs.deepseek.com/quick_start/pricing)
 
 ## Связанные заметки

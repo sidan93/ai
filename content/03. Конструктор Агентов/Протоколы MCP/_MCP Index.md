@@ -10,6 +10,7 @@ aliases:
 created: 2026-04-16
 updated: 2026-09-14
 status: time-sensitive
+review_after: 2026-12-14
 ---
 
 # Model Context Protocol (MCP)
@@ -73,6 +74,7 @@ MCP — открытый протокол взаимодействия AI-при
 
 ## Связанные разделы
 
+- [[_Agent Builder Index|Конструктор агентов]]
 - [[_Agentic Systems Index|Агентные системы]]
 - [[Протоколы Автономности]]
 - [[Indirect Prompt Injection]]

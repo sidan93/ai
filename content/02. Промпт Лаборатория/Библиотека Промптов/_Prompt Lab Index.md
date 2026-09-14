@@ -59,6 +59,7 @@ status: evergreen
 
 ## Связанные заметки
 
+- [[_Prompting Index|Промпт-лаборатория]]
 - [[Для начинающих]]
 - [[_Glossary Index|Глоссарий AI]]
 - [[Structured Output]]

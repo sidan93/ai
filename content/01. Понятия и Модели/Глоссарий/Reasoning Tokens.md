@@ -11,6 +11,7 @@ aliases:
 created: 2026-09-10
 updated: 2026-09-10
 status: time-sensitive
+review_after: 2026-12-14
 ---
 
 # Reasoning Tokens (Токены рассуждения)

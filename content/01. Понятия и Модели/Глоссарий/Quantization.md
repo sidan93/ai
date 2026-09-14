@@ -38,6 +38,6 @@ status: evergreen
 
 - [[Weights]]
 - [[Inference]]
-- [[Hardware]]
-- [[Formats]]
+- [[Железо для локальных моделей]]
+- [[Форматы и квантование]]
 - [[Knowledge Distillation]]

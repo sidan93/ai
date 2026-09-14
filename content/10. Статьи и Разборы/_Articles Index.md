@@ -6,8 +6,9 @@ tags:
 aliases:
   - Библиотека статей
   - Article Index
-created: 2026-04-16T00:00:00.000Z
-updated: 2026-09-10
+created: 2026-04-16
+updated: 2026-09-14
+status: evergreen
 ---
 
 # 📚 Библиотека разборов и переводов
@@ -22,21 +23,29 @@ updated: 2026-09-10
 
 ## 🗂 Категории материалов
 
-### 🔬 Научные статьи (Research Papers)
-- *Здесь будут ссылки на разборы архитектур (например, "Attention is All You Need").*
+### Архитектуры и исследования
 
-### 🛠 Технические блоги (Engineering Blogs)
 - [[009. 2026-06-25 - RLM - Recursive Language Models]]
+
+### Агенты, память и harness engineering
+
 - [[008. 2026-04-23 - The 5 Types of AI Agent Memory Part 1 - DEV Community]]
 - [[007. 2026-04-22 - Building Effective Agents - YouTube Talk]]
-- [[006. 2026-04-21 - 7 LLM Generation Parameters]]
 - [[005. 2026-04-21 - The Anatomy of an Agent Harness]]
-- [[004. 2026-04-16 - Prompt Caching]]
 - [[003. 2026-04-16 - Harness Engineering - Your AI Isnt Stupid - Lychee Blog]]
-- [[002. 2026-04-15 - Claude Code - Session Management and 1M Context]]
 
-### 💼 Кейсы и Практика (Use Cases)
+### Практика работы с моделями и инструментами
+
+- [[006. 2026-04-21 - 7 LLM Generation Parameters]]
+- [[004. 2026-04-16 - Prompt Caching]]
+- [[002. 2026-04-15 - Claude Code - Session Management and 1M Context]]
 - [[001. 2026-04-10 - 20 Powerful Agentic-Skills - Explorax Guide]]
+
+## Навигация
+
+- [[index|Командный центр]]
+- [[_Agent Builder Index|Конструктор агентов]]
+- [[_Prompting Index|Промпт-лаборатория]]
 
 ---
 

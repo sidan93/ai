@@ -4,14 +4,14 @@ tags:
   - retrieval
   - knowledge-base
 aliases:
-  - Retrieval-Augmented Generation
+  - Проектирование RAG-систем
   - Генерация с извлечением
 created: 2026-04-15
 updated: 2026-09-14
 status: evergreen
 ---
 
-# RAG (Retrieval-Augmented Generation)
+# Проектирование RAG-системы
 
 > [!abstract]
 > RAG — архитектура, в которой система извлекает внешние данные и добавляет выбранные фрагменты в контекст генерации. Она даёт модели доступ к корпусу во время inference, не изменяя её веса.

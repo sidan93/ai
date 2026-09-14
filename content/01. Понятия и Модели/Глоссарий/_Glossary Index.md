@@ -8,6 +8,7 @@ aliases:
   - AI Terms Index
 created: 2026-04-15
 updated: 2026-09-14
+status: evergreen
 ---
 
 # Glossary: словарь ИИ-терминов
@@ -72,6 +73,7 @@ updated: 2026-09-14
 
 ## Связанные разделы
 
+- [[_Concepts and Models Index|Понятия и модели]]
 - [[_Map of Content|Промпт-инжиниринг]]
 - [[_AI Systems Architecture Index|Архитектура AI-систем]]
 - [[_Training and Alignment Index|Обучение и настройка моделей]]

@@ -78,6 +78,7 @@ input → retrieval → model → check → output  = system architecture
 
 ## Что сюда не входит
 
+- [[_Agent Builder Index|Конструктор агентов]] — общая карта инженерных разделов.
 - [[_Map of Content|Промпт Лаборатория]] — инструкции и методики отдельных вызовов.
 - [[_Agentic Systems Index|Агентные системы]] — автономный цикл, tools, память и безопасность.
 - [[_Training and Alignment Index|Обучение и настройка моделей]] — SFT, RLHF и DPO меняют веса.

@@ -5,15 +5,15 @@ tags:
   - api
   - llm
 created: 2026-04-15
-updated: 2026-09-10
+updated: 2026-09-14
 status: time-sensitive
-review_after: 2026-10-10
+review_after: 2026-10-14
 ---
 
 # Справочник LLM API
 
 > [!warning] Изменчивые данные
-> Цены, лимиты и названия моделей меняются часто. Страница проверена 10 сентября 2026 года по официальным источникам. Перед запуском платной нагрузки перепроверь тариф провайдера.
+> Цены, лимиты и названия моделей меняются часто. Страница проверена 14 сентября 2026 года по официальным источникам. Перед запуском платной нагрузки перепроверь тариф провайдера.
 
 ## Быстрый выбор
 
@@ -28,9 +28,9 @@ review_after: 2026-10-10
 
 | Провайдер | Актуальный ориентир | Что важно |
 | :--- | :--- | :--- |
-| OpenAI | GPT-5.6 Sol / Terra / Luna | Разные профили качества и стоимости; цена может зависеть от режима обслуживания |
-| Anthropic | Claude Opus 5, Sonnet 5, Fable 5 | Проверяй доступность, effort и правила fallback для чувствительных доменов |
-| Google | Gemini 3.8 Flash и другие Gemini 3.x | Есть Standard, Batch, Flex и Priority; preview-модели имеют отдельный жизненный цикл |
+| OpenAI | GPT-6 Astra; GPT-5.6 Terra / Luna для баланса и большого потока | Сравнивай reasoning effort, tools и цену успешной задачи; фиксируй model ID |
+| Anthropic | Claude Opus 5, Fable 5.1, Sonnet 5, Haiku 4.5 | Проверяй доступность, effort и правила fallback для чувствительных доменов |
+| Google | Gemini 3.1 Pro, 3.8 Flash, 3.5 Flash-Lite | Режимы обслуживания и preview-модели имеют отдельные цены и жизненный цикл |
 | DeepSeek | DeepSeek V4 Flash / Pro | OpenAI- и Anthropic-совместимые форматы API; отдельная цена cache hit/miss |
 
 Полную матрицу цен здесь намеренно не дублируем: она устаревает быстрее заметки. Ниже приведены прямые официальные страницы.
@@ -57,11 +57,12 @@ review_after: 2026-10-10
 
 ## Официальные источники
 
-- [OpenAI — API pricing](https://openai.com/api/pricing/)
+- [OpenAI — model catalog](https://developers.openai.com/api/docs/models)
+- [OpenAI — API pricing](https://developers.openai.com/api/docs/pricing)
 - [Anthropic — pricing](https://www.anthropic.com/pricing)
-- [Anthropic — model deprecations](https://docs.anthropic.com/en/docs/about-claude/model-deprecations)
+- [Anthropic — models overview](https://platform.claude.com/docs/en/models/overview)
 - [Google — Gemini API pricing](https://ai.google.dev/gemini-api/docs/pricing)
-- [Google — Gemini models](https://ai.google.dev/gemini-api/docs/models)
+- [Google — Gemini API documentation](https://ai.google.dev/gemini-api/docs)
 - [DeepSeek — models and pricing](https://api-docs.deepseek.com/quick_start/pricing)
 
 ## Связанные заметки

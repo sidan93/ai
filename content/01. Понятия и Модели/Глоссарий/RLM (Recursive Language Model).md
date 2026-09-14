@@ -9,6 +9,7 @@ aliases:
 created: 2026-06-25
 updated: 2026-09-10
 status: source-summary
+source: https://alexzhang13.github.io/blog/2025/rlm/
 ---
 
 # RLM (Recursive Language Model)

@@ -9,6 +9,7 @@ aliases:
 created: 2026-04-15
 updated: 2026-09-14
 status: time-sensitive
+review_after: 2026-12-14
 ---
 
 # Sequential Thinking MCP

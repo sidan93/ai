@@ -5,14 +5,13 @@ tags:
   - knowledge-management
 aliases:
   - RAG
-  - Retrieval-Augmented Generation
   - Генерация с дополнением из поиска
 created: 2026-04-15
 updated: 2026-09-10
 status: evergreen
 ---
 
-# RAG (Retrieval-Augmented Generation)
+# RAG: краткое определение
 
 > [!abstract] Определение
 > **RAG** — архитектура, в которой система сначала извлекает релевантные данные из внешнего источника, затем добавляет их в контекст модели для формирования ответа.

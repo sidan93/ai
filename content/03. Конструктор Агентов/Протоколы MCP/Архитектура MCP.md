@@ -8,6 +8,7 @@ aliases:
 created: 2026-09-14
 updated: 2026-09-14
 status: time-sensitive
+review_after: 2026-12-14
 ---
 
 # Архитектура MCP

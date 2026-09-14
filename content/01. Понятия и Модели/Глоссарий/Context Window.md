@@ -9,6 +9,7 @@ aliases:
   - Окно контекста
 created: 2026-04-15
 updated: 2026-09-10
+status: evergreen
 ---
 
 # Context Window (Окно контекста)

@@ -55,6 +55,7 @@ evals → deployment → monitoring
 
 ## Связи
 
+- [[_Concepts and Models Index|Понятия и модели]]
 - [[Weights]]
 - [[Inference]]
 - [[Evals]]
