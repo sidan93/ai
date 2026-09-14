@@ -5,7 +5,7 @@ tags:
   - OS
 
 title: AI Knowledge Base
-updated: 2026-09-10
+updated: 2026-09-14
 ---
 
 # 🧠 AI Knowledge OS | Командный центр
@@ -43,6 +43,7 @@ updated: 2026-09-10
 * [[Для начинающих|Старт]] — вводные гайды.
 * [[Справочник основных LLM|Модели]] — характеристики актуальных нейросетей.
 * [[AI Stack 2026]] — визуальная карта всей индустрии.
+* [[_Training and Alignment Index|Обучение и настройка]] — SFT, RLHF, DPO и отличие от inference-подходов.
 
 ### 🧪 [[_Map of Content|02. Промпт-Лаборатория]]
 *Методология общения и готовые решения.*
@@ -53,9 +54,9 @@ updated: 2026-09-10
 *Сборка автономных систем и инструментов.*
 * [[_Agentic Systems Index|Агентные системы]] — паттерны автономности и анатомия.
 * [[_MCP Index|Протоколы MCP]] — подключение внешних инструментов (Brave, Filesystem).
-* [[_Skills Index|AI Skills]] — библиотека функций и концепция навыков.
-* [[_Advanced Architectures Index|Сложные архитектуры]] — GraphRAG, DPO, RLHF, Multi-Agent.
-* [[_Frameworks Index|Фреймворки]] — LangChain, LlamaIndex, AutoGen, CrewAI.
+* [[_Skills Index|AI Skills]] — переиспользуемые процедуры, ресурсы и проверки.
+* [[_AI Systems Architecture Index|Архитектура AI-систем]] — context, RAG, workflows и evaluation.
+* [[_Frameworks Index|Фреймворки]] — карта выбора: provider SDK, LangGraph, Microsoft Agent Framework, RAG-pipelines и multi-agent.
 
 ### ⚙️ 04. Цех и запуск
 *Практическая эксплуатация и железо.*
@@ -83,4 +84,4 @@ updated: 2026-09-10
 * [[009. 2026-06-25 - RLM - Recursive Language Models]]
 
 ---
-**Последнее обновление:** 2026-09-10 | #MOC | [[Политика конфиденциальности]]
+**Последнее обновление:** 2026-09-14 | #MOC | [[Политика конфиденциальности]]

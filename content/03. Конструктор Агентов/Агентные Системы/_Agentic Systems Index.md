@@ -7,7 +7,7 @@ aliases:
   - Указатель агентных систем
   - Agentic Systems Hub
 created: 2026-04-15
-updated: 2026-09-11
+updated: 2026-09-14
 status: evergreen
 ---
 
@@ -32,6 +32,7 @@ status: evergreen
 - [[Prompt Chaining]] — явные цепочки преобразований.
 - [[Multi-Agent Systems]] — когда действительно нужны несколько агентов.
 - [[Long Context Management]] — отбор, сжатие и восстановление контекста.
+- [[Workflow-паттерны LLM-систем]] — фиксированные контуры, с которыми нужно сравнивать agent loop.
 
 ### 3. Контроль и эксплуатация
 
@@ -46,6 +47,7 @@ status: evergreen
 - [[_Frameworks Index|Сравнение фреймворков]] — отдельные карточки конкретных решений.
 - [[_MCP Index|Протоколы MCP]] — подключения к данным и действиям.
 - [[_Skills Index|Skills]] — переиспользуемые инструкции, ресурсы и процессы.
+- [[_AI Systems Architecture Index|Архитектура AI-систем]] — retrieval, workflows и evaluation вокруг модели.
 
 ## Сначала простой контур
 

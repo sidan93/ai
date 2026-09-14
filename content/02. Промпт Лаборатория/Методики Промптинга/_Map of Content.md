@@ -7,7 +7,7 @@ aliases:
   - Master Prompting Guide
   - Карта Промпт-Инжиниринга
 created: 2026-04-15
-updated: 2026-09-11
+updated: 2026-09-14
 status: evergreen
 ---
 
@@ -43,6 +43,7 @@ status: evergreen
 - [[Chain of Thought (CoT)]] — проверяемые промежуточные результаты вместо запроса скрытого рассуждения.
 - [[Least-to-Most Prompting]] — последовательное решение зависимых подзадач.
 - [[Step-Back Prompting]] — проверка применимых принципов перед частным решением.
+- [[Prompt Chaining]] — последовательность проверяемых вызовов и граница между prompting и workflow.
 
 ### Сжатие и проверка
 
@@ -59,6 +60,7 @@ status: evergreen
 | Нестабильный формат | [[Zero-shot vs Few-shot Prompting]] или [[Structured Output]] |
 | Большой недоверенный документ | [[Delimiters]] и правила из [[Indirect Prompt Injection]] |
 | Несколько зависимых этапов | [[Least-to-Most Prompting]] |
+| Нужны отдельные контракты и проверки между этапами | [[Prompt Chaining]] |
 | Важные факты | внешние источники + [[Chain of Verification (CoVe)]] |
 | Потеря деталей при сокращении | [[Chain of Density (CoD)]] с проверкой сохранности |
 | Улучшение рабочего шаблона | [[Тестирование промптов]] |
@@ -78,6 +80,7 @@ status: evergreen
 - [[_Glossary Index|Глоссарий]] — термины и устройство современных AI-систем.
 - [[Context Engineering]] — подбор и организация доступного модели контекста.
 - [[Evals]] — систематическая оценка качества.
+- [[_AI Systems Architecture Index|Архитектура AI-систем]] — orchestration между model calls, retrieval и проверками.
 
 ## Актуальные руководства
 

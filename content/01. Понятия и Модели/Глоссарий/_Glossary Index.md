@@ -7,7 +7,7 @@ aliases:
   - Основной словарь
   - AI Terms Index
 created: 2026-04-15
-updated: 2026-09-10
+updated: 2026-09-14
 ---
 
 # Glossary: словарь ИИ-терминов
@@ -31,6 +31,8 @@ updated: 2026-09-10
 - [[Quantization]] — снижение числовой точности ради памяти и производительности.
 - [[Knowledge Distillation]] — обучение компактного student на сигналах teacher-модели.
 - [[Fine-tuning]] — изменение поведения модели через дополнительное обучение.
+- [[Reinforcement Learning from Human Feedback (RLHF)|RLHF]] — post-training через человеческий feedback и reinforcement learning.
+- [[Direct Preference Optimization (DPO)|DPO]] — offline preference optimization по парам ответов.
 
 ## 3. Контекст и знания
 
@@ -71,9 +73,10 @@ updated: 2026-09-10
 ## Связанные разделы
 
 - [[_Map of Content|Промпт-инжиниринг]]
-- [[_Advanced Architectures Index|Сложные архитектуры]]
+- [[_AI Systems Architecture Index|Архитектура AI-систем]]
+- [[_Training and Alignment Index|Обучение и настройка моделей]]
 - [[_Agentic Systems Index|Агентные системы]]
 - [[_Local AI Index|Локальный ИИ]]
 
 ---
-_Последнее обновление: 2026-09-10_
+_Последнее обновление: 2026-09-14_

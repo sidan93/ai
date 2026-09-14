@@ -1,70 +1,56 @@
 ---
-tags:
-  - framework
-  - haystack
-  - rag
-  - pipelines
+tags: [framework, haystack, rag, pipelines, agents]
+aliases: [Haystack]
 created: 2026-04-16
-updated: 2026-09-10
+updated: 2026-09-14
 status: time-sensitive
+review_after: 2026-12-14
 ---
 
 # Haystack
 
-> [!abstract]
-> Haystack — open-source Python-фреймворк для RAG, поиска, LLM-пайплайнов и инструментальных агентов. Базовые абстракции — компоненты, pipeline, document stores, generators и tools.
+> [!abstract] Суть
+> Haystack 2 — open-source Python framework для компонентных RAG-, search- и agent-pipelines. Его сильная сторона — явный граф совместимых компонентов, а не скрытая цепочка вызовов.
 
-## Как устроен
+## Модель
 
-- **Components** выполняют отдельные операции: преобразование, embedding, retrieval, reranking или генерацию.
-- **Pipelines** соединяют совместимые входы и выходы компонентов в направленный мультиграф; возможны ветвления, параллельные потоки и циклы.
-- **Document Stores** предоставляют хранилище для документов и retrieval-компонентов.
-- **Agent** запускает цикл вызова модели и инструментов до заданного условия выхода.
-- **Tools** могут оборачивать функцию, компонент или другой pipeline.
+- **Component** — типизированный шаг: converter, embedder, retriever, ranker, generator, router и т. п.
+- **Pipeline** — направленный мультиграф; поддерживает ветвления, циклы и сериализацию.
+- **AsyncPipeline** — параллельно выполняет независимые компоненты.
+- **Document Store** — интерфейс хранения и поиска документов.
+- **Tool** — функция, component или pipeline, доступные модели.
+- **Agent** — итеративный tool-use component с явными exit conditions.
 
-Совместимость входов и выходов помогает обнаруживать ошибки соединения компонентов, но не гарантирует корректность данных или ответа модели.
+Проверка совместимости входов и выходов ловит часть ошибок сборки, но не доказывает корректность данных, retrieval или ответа.
 
-## Когда рассматривать
+## Когда выбирать
 
-- RAG-пайплайн с явными этапами indexing и query.
-- Гибридный поиск, reranking и маршрутизация.
-- Система, где важны заменяемые компоненты и наблюдаемая схема потока данных.
-- Агент, которому удобно предоставлять существующие pipelines как инструменты.
+- нужны видимые и заменяемые стадии ingestion/query pipeline;
+- используются hybrid search, filters, routing и reranking;
+- retrieval важнее сложной долгоживущей агентной оркестрации;
+- существующий pipeline удобно предоставить агенту как один контролируемый tool.
 
-## Что проверить перед выбором
+Для workflow с богатым состоянием, approvals и длительным возобновлением отдельно сравни orchestration runtime. Для простого RAG сравни с небольшим собственным pipeline.
 
-- Есть ли готовая интеграция с нужной моделью и хранилищем.
-- Подходит ли модель выполнения pipeline для нужных циклов и состояния.
-- Как будут устроены evals, трассировка, секреты, retries и лимиты инструментов.
-- Нужен ли фреймворк вообще: небольшой последовательный RAG иногда проще реализовать напрямую.
+## Production-чек
 
-## Минимальный эскиз
-
-```python
-from haystack import Pipeline
-from haystack.components.builders import PromptBuilder
-from haystack.components.generators import OpenAIGenerator
-
-pipe = Pipeline()
-pipe.add_component("prompt", PromptBuilder(template="Ответь кратко: {{ question }}"))
-pipe.add_component("llm", OpenAIGenerator())
-pipe.connect("prompt", "llm")
-
-result = pipe.run({"prompt": {"question": "Что такое RAG?"}})
-```
-
-Пример требует установленного пакета, действующих учётных данных провайдера и может измениться между версиями. Для production добавь обработку ошибок, ограничения и evals.
+- evals отдельно для retrieval и generation;
+- retries, timeouts и лимиты циклов;
+- контроль доступа и фильтры метаданных до выдачи контекста;
+- защита от вредоносных инструкций в документах;
+- tracing, сериализация и совместимость версий компонентов;
+- фактический выигрыш AsyncPipeline по latency.
 
 ## Официальные источники
 
 - [Haystack documentation](https://docs.haystack.deepset.ai/docs)
-- [Components](https://docs.haystack.deepset.ai/docs/components)
 - [Pipelines](https://docs.haystack.deepset.ai/docs/pipelines)
-- [Agents](https://docs.haystack.deepset.ai/docs/agents)
+- [Agent component](https://docs.haystack.deepset.ai/docs/agent)
+- [Components](https://docs.haystack.deepset.ai/docs/components)
 
-## Связи
+## Связанные заметки
 
 - [[RAG (Retrieval-Augmented Generation)]]
 - [[LlamaIndex]]
-- [[LangChain]]
+- [[Indirect Prompt Injection]]
 - [[_Frameworks Index]]

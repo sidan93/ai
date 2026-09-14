@@ -1,78 +1,54 @@
 ---
-tags: [framework, agents, multi_agent, microsoft]
+tags: [framework, agents, multi_agent, microsoft, legacy]
 aliases: [AutoGen]
 created: 2026-04-16
-updated: 2026-09-10
+updated: 2026-09-14
 status: time-sensitive
-review_after: 2026-12-10
+review_after: 2026-12-14
 ---
 
 # AutoGen
 
-> [!abstract] Суть
-> AutoGen — фреймворк Microsoft для агентных приложений. Современная архитектура отличается от старой ветки 0.2 и разделена на AgentChat, Core и Extensions.
+> [!warning] Статус на 2026-09-14
+> AutoGen находится в maintenance mode и поддерживается сообществом: ожидаются исправления критических ошибок и уязвимостей, но не новые крупные функции. Для новых проектов Microsoft рекомендует [[Microsoft Agent Framework]].
 
-## Слои
+## Что это было
 
-| Слой | Для чего |
+AutoGen — open-source фреймворк для одиночных и multi-agent приложений. Его современная, но теперь legacy-архитектура отличается от старой ветки 0.2.
+
+| Слой | Назначение |
 | :--- | :--- |
-| AgentChat | Высокоуровневые одиночные агенты и команды |
-| Core | Event-driven runtime и низкоуровневая маршрутизация сообщений |
-| Extensions | Интеграции с моделями, code executors и MCP |
-| Studio | Визуальное прототипирование |
+| AgentChat | Высокоуровневые агенты, команды и шаблоны взаимодействия |
+| Core | Event-driven runtime и маршрутизация сообщений |
+| Extensions | Model clients, executors и другие интеграции |
+| Studio / Bench | Прототипирование и измерение сценариев |
 
-Новому проекту не стоит начинать со старых примеров ConversableAgent из AutoGen 0.2. Используй актуальные пакеты и migration guide.
+Старые статьи с `ConversableAgent` часто относятся к AutoGen 0.2. Даже при сопровождении существующего проекта сначала определи поколение API.
 
-## Минимальная установка
+## Практическое решение
 
-```bash
-pip install -U "autogen-agentchat" "autogen-ext[openai]"
-```
+**Оставаться на AutoGen разумно**, если система уже работает, миграция пока дороже поддержки, а security fixes и зависимости отслеживаются.
 
-Пример ниже показывает форму API; model ID и учётные данные выбираются отдельно.
+**Не начинать новый проект**, если нет конкретной причины зависеть от AutoGen Core или его исследовательских примеров. Сначала оцени Microsoft Agent Framework либо более узкий SDK/runtime.
 
-```python
-import asyncio
+## План сопровождения и миграции
 
-from autogen_agentchat.agents import AssistantAgent
-from autogen_ext.models.openai import OpenAIChatCompletionClient
-
-async def main():
-    client = OpenAIChatCompletionClient(model="MODEL_ID")
-    agent = AssistantAgent("assistant", model_client=client)
-    result = await agent.run(task="Кратко объясни назначение AutoGen.")
-    print(result)
-    await client.close()
-
-asyncio.run(main())
-```
-
-## Когда выбирать
-
-- исследуется взаимодействие нескольких агентов;
-- нужна явная маршрутизация сообщений;
-- важен event-driven runtime;
-- требуются сменные executors и model clients.
-
-Для обычного tool-calling агента один агент с хорошо определёнными tools часто проще и надёжнее команды ролей.
-
-## Безопасность
-
-- запускай сгенерированный код в изолированном executor;
-- задавай termination conditions и лимиты;
-- не передавай секреты в историю сообщений;
-- отделяй пользовательское подтверждение от обычного сообщения агента;
-- логируй tool calls и проверяй конечный результат.
+1. Зафиксировать версии `autogen-agentchat`, `autogen-core` и extensions.
+2. Инвентаризировать agents, teams, termination conditions, model clients и executors.
+3. Закрыть generated code в sandbox и ограничить полномочия tools.
+4. Перенести evals на независимый от фреймворка уровень.
+5. Сопоставить компоненты с официальным migration guide Microsoft Agent Framework.
+6. Мигрировать по одному workflow, сохраняя контрольные traces и результаты.
 
 ## Официальные источники
 
+- [AutoGen repository: project status](https://github.com/microsoft/autogen)
 - [AutoGen documentation](https://microsoft.github.io/autogen/stable/)
-- [AgentChat tutorial](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/index.html)
-- [Migration from 0.2](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/migration-guide.html)
+- [Migration from AutoGen to Microsoft Agent Framework](https://learn.microsoft.com/en-us/agent-framework/migration-guide/)
 
 ## Связанные заметки
 
+- [[Microsoft Agent Framework]]
 - [[Multi-Agent Systems]]
 - [[Tool Use Function Calling]]
-- [[MCP (Model Context Protocol)]]
 - [[_Frameworks Index]]

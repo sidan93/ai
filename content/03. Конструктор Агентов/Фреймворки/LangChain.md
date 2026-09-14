@@ -1,71 +1,62 @@
 ---
-tags:
-  - framework
-  - langchain
-  - agents
-  - python
-aliases:
-  - LangChain
+tags: [framework, langchain, langgraph, agents, orchestration]
+aliases: [LangChain, LangGraph]
 created: 2026-04-16
-updated: 2026-09-10
+updated: 2026-09-14
 status: time-sensitive
+review_after: 2026-12-14
 ---
 
-# LangChain
+# LangChain и LangGraph
 
-> [!abstract]
-> LangChain v1 — высокоуровневый Python-фреймворк для model/tool integration и агентов. Основной конструктор агента — `create_agent`; его цикл выполняется поверх runtime LangGraph.
+> [!abstract] Суть
+> LangChain — высокоуровневый framework для агентов и интеграций. LangGraph — отдельный низкоуровневый runtime для долгоживущей stateful-оркестрации; его можно использовать без LangChain.
 
-## Текущая карта экосистемы
+## Карта экосистемы
 
-- **LangChain** — готовые абстракции моделей, инструментов, middleware, structured output и `create_agent`.
-- **LangGraph** — низкоуровневые графы выполнения, состояние, persistence, streaming и human-in-the-loop.
-- **LangSmith** — отдельный сервис для трассировки, evals и наблюдаемости.
-- **Provider packages** — интеграции с конкретными поставщиками моделей устанавливаются отдельно.
+| Компонент | Роль |
+| :--- | :--- |
+| LangChain | Models, tools, middleware, structured output и готовый agent loop |
+| LangGraph | State, nodes, edges, persistence, durable execution, streaming и human-in-the-loop |
+| Deep Agents | Более готовый agent harness поверх экосистемы |
+| LangSmith | Отдельная платформа tracing, evals, testing и deployment |
 
-Старые руководства по `LLMChain`, `AgentExecutor` и `langgraph.prebuilt.create_react_agent` могут относиться к прежним API. Для нового проекта начинай с документации v1 и migration guide.
+Это не взаимозаменяемые названия. `create_agent` удобен для типового tool-calling агента; собственный LangGraph нужен, когда порядок, состояние и точки управления являются частью бизнес-логики.
 
-## Когда использовать
+## Когда выбирать
 
-- Нужно быстро собрать инструментального агента из поддерживаемых интеграций.
-- Нужны middleware, structured output и единый интерфейс моделей.
-- Хочется начать с `create_agent`, сохранив возможность перейти к собственному графу LangGraph.
+**LangChain**, если нужны готовые интеграции, middleware и быстрый старт с agent loop.
 
-## Когда можно обойтись без него
+**LangGraph**, если нужны:
 
-- Один-два вызова модели без состояния и ветвлений.
-- Критичен минимальный набор зависимостей.
-- API провайдера уже покрывает весь необходимый workflow.
+- явный граф с ветвлениями и циклами;
+- checkpoints, пауза, возобновление и human approval;
+- долгие stateful workflows;
+- смешение детерминированных шагов и агентных узлов.
 
-## Минимальный пример
+**Обойтись SDK провайдера**, если workflow короткий и собственный цикл остаётся понятнее абстракций.
 
-```python
-from langchain.agents import create_agent
+## Риски и границы
 
+- Экосистема меняется быстро: старые материалы про `LLMChain`, `AgentExecutor` и прежние prebuilt API могут быть неактуальны.
+- Persistence не делает tools идемпотентными: повтор внешнего действия надо предотвращать отдельно.
+- LangSmith — не обязательное условие использования open-source LangChain/LangGraph.
+- Широкая интеграция ускоряет прототип, но повышает площадь зависимостей и миграций.
 
-def get_weather(city: str) -> str:
-    """Return weather from a trusted backend."""
-    return f"No backend configured for {city}"
+## Практика
 
-
-agent = create_agent(
-    model="provider:model-name",
-    tools=[get_weather],
-    system_prompt="Use tools when needed and report their limitations.",
-)
-```
-
-Идентификатор модели, пакет провайдера и способ передачи ключа сверяй с текущей документацией. Функция в примере — заглушка, а не источник погоды.
+Держи доменные tools и схемы данных независимыми от фреймворка. Тестируй node/tool отдельно, а граф — через сценарии с сохранённым состоянием, ошибкой и повторным запуском.
 
 ## Официальные источники
 
 - [LangChain overview](https://docs.langchain.com/oss/python/langchain/overview)
-- [Agents](https://docs.langchain.com/oss/python/langchain/agents)
-- [LangChain v1 migration](https://docs.langchain.com/oss/python/migrate/langchain-v1)
 - [LangGraph overview](https://docs.langchain.com/oss/python/langgraph/overview)
+- [LangGraph Graph API](https://docs.langchain.com/oss/python/langgraph/graph-api)
+- [LangChain v1 migration](https://docs.langchain.com/oss/python/migrate/langchain-v1)
 
-## Связи
+## Связанные заметки
 
-- [[_Frameworks Index]]
-- [[Tool Use Function Calling]]
+- [[Workflow-паттерны LLM-систем]]
 - [[Протоколы Автономности]]
+- [[Наблюдаемость и оценка агентов]]
+- [[_Frameworks Index]]
