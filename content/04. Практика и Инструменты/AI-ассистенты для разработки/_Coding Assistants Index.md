@@ -2,7 +2,7 @@
 tags: [MOC, coding_agents, development, workflow]
 aliases: [AI-ассистенты для разработки, Claude Code: Мастер-индекс, _Claude Code Index]
 created: 2026-04-21
-updated: 2026-09-14
+updated: 2026-10-27
 status: time-sensitive
 review_after: 2026-12-14
 ---
@@ -18,6 +18,7 @@ review_after: 2026-12-14
 - [[Быстрый старт Codex]] — CLI, вход, `AGENTS.md`, permissions и review.
 - [[Быстрый старт Claude Code]] — CLI, вход, `CLAUDE.md` и permissions.
 - [[Engineering Loop]] — один из более строгих процессов для Claude Code, а не обязательный стандарт.
+- [[BMAD Method]] — процесс разработки через skills, специализированные роли и передаваемые между сеансами артефакты.
 
 ## Как выбирать инструмент
 
