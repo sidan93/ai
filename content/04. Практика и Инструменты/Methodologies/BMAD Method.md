@@ -1,6 +1,10 @@
 ---
 tags: [coding_agents, workflow, skills, development, bmad]
-aliases: [BMAD, BMad Method, BMAD-METHOD]
+aliases:
+  - "BMAD"
+  - "BMad Method"
+  - "BMAD-METHOD"
+  - "04.-практика-и-инструменты/ai-ассистенты-для-разработки/bmad-method"
 created: 2026-10-27
 updated: 2026-10-27
 status: time-sensitive

@@ -64,10 +64,11 @@ status: evergreen
 * [[_Frameworks Index|Фреймворки]] — карта выбора: provider SDK, LangGraph, Microsoft Agent Framework, RAG-pipelines и multi-agent.
 
 ### 🛠️ [[_Practice and Tools Index|04. Практика и инструменты]]
-*Повседневная работа с coding-агентами и локальными моделями.*
+*Повседневная работа с coding-агентами, локальными моделями и методологиями разработки с ИИ.*
 * [[_Practice and Tools Index|Карта раздела]] — что здесь находится и куда вынесены смежные темы.
 * [[_Coding Assistants Index|AI-ассистенты для разработки]] — Codex, Claude Code, permissions, review и рабочий цикл.
 * [[_Local AI Index|Локальный запуск моделей]] — железо, форматы, Ollama, LM Studio и интерфейсы.
+* [[_Methodologies Index|Methodologies]] — BMAD Method, Engineering Loop и организация разработки с ИИ.
 
 ### 🗺️ [[_Atlas Index|05. Атлас и справочники]]
 *Карты цен, лимитов и внешние ресурсы.*

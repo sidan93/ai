@@ -1,8 +1,10 @@
 ---
 tags: [claude_code, workflow, engineering, source_summary]
-aliases: [Engineering Loop]
+aliases:
+  - "Engineering Loop"
+  - "04.-практика-и-инструменты/ai-ассистенты-для-разработки/engineering-loop"
 created: 2026-06-25
-updated: 2026-09-14
+updated: 2026-10-27
 status: source-summary
 source: https://github.com/sidan93/claude-eng-loop
 ---
