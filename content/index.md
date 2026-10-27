@@ -20,6 +20,7 @@ status: evergreen
 ## ⚡️ В фокусе (Active Now)
 > [!star] Актуальные проекты и материалы
 > **📄 Страницы**
+> * 📐 [[OpenSpec]] — согласование изменения поведения через proposal, specs, design и tasks; обновление требований после реализации.
 > * 🛠️ [[BMAD Method]] — как организовать работу coding-агента через skills, требования, реализацию и ревью; границы автономности и различия версий.
 > * 🧩 [[Skill vs Agent — что и когда выбирать]] — алгоритм выбора, три сценария и типичные ошибки.
 > * 🐎 [[Harness|Харнес (Harness)]] — новый термин в глоссарии: инженерная обвязка вокруг модели — цикл, инструменты, память, проверки. Всё, что не веса, — это харнес.
@@ -68,7 +69,7 @@ status: evergreen
 * [[_Practice and Tools Index|Карта раздела]] — что здесь находится и куда вынесены смежные темы.
 * [[_Coding Assistants Index|AI-ассистенты для разработки]] — Codex, Claude Code, permissions, review и рабочий цикл.
 * [[_Local AI Index|Локальный запуск моделей]] — железо, форматы, Ollama, LM Studio и интерфейсы.
-* [[_Methodologies Index|Methodologies]] — BMAD Method, Engineering Loop и организация разработки с ИИ.
+* [[_Methodologies Index|Methodologies]] — BMAD Method, Engineering Loop, OpenSpec и организация разработки с ИИ.
 
 ### 🗺️ [[_Atlas Index|05. Атлас и справочники]]
 *Карты цен, лимитов и внешние ресурсы.*
