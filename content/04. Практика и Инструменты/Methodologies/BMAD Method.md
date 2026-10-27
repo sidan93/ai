@@ -78,14 +78,14 @@ BMAD предлагает подбирать объём подготовки п�
 
 ## ⚠️ Версии и ограничения
 
-На **2026-10-27** проверены два конкретных снимка официального репозитория:
+По состоянию на **2026-10-27** в документации BMAD описаны две линии:
 
-| Линия | Что проверено | Особенности |
+| Линия | Версия и дата | Особенности |
 | :--- | :--- | :--- |
-| **Stable v6.12.4** | Тег от 2026-10-14; версия подтверждена в package.json | Документация использует `bmad-spec`, `bmad-build` и помощник `bmad-help` |
-| **V7 Preview Alpha** | Commit `61e01f8` от 2026-10-18; так обозначен в README | Меняются установка и структура skills; `bmad-agent-po` заменяет ряд прежних процедур, hub называется `bmad` |
+| **Stable v6.12.4** | Стабильный релиз от 2026-10-14 | Документация использует `bmad-spec`, `bmad-build` и помощник `bmad-help` |
+| **V7 Preview Alpha** | Предварительная версия; документация от 2026-10-18 | Меняются установка и структура skills; `bmad-agent-po` заменяет ряд прежних процедур, hub называется `bmad` |
 
-Это сравнение зафиксированных источников, не обещание, что плавающая документация или следующая версия сохранят те же команды. Прошедшая прогнозная дата релиза в README не подтверждает выход стабильной v7.
+Перед использованием сверяй команды с документацией выбранной версии. Плановая дата релиза в README сама по себе не означает, что стабильная v7 уже выпущена.
 
 Для stable README указывает Node.js 20.12+, Python 3.10+ и uv; нужен совместимый AI coding tool. Установка здесь не проверялась. Перед внедрением сверяй инструкции именно выбранной линии.
 
@@ -103,11 +103,11 @@ BMAD предлагает подбирать объём подготовки п�
 
 ## Официальные источники
 
-- [README v6.12.4](https://github.com/bmad-code-org/BMAD-METHOD/blob/v6.12.4/README.md) — назначение и зависимости стабильного снимка.
+- [README v6.12.4](https://github.com/bmad-code-org/BMAD-METHOD/blob/v6.12.4/README.md) — назначение и зависимости стабильной версии.
 - [Choose a Planning Path, v6.12.4](https://github.com/bmad-code-org/BMAD-METHOD/blob/v6.12.4/docs/plan/choose-a-planning-path.md) — выбор глубины подготовки и `bmad-spec`.
 - [Build a Change, v6.12.4](https://github.com/bmad-code-org/BMAD-METHOD/blob/v6.12.4/docs/build/build-a-change.md) — единица реализации и проверка.
 - [Autonomous Development Loops, v6.12.4](https://github.com/bmad-code-org/BMAD-METHOD/blob/v6.12.4/docs/build/autonomous-development-loops.md) — границы worker и требования к subagents.
-- [README preview, commit 61e01f8](https://github.com/bmad-code-org/BMAD-METHOD/blob/61e01f82644c4bb533750cfa0d6d61ab61d2cc9b/README.md) и [CHANGELOG того же снимка](https://github.com/bmad-code-org/BMAD-METHOD/blob/61e01f82644c4bb533750cfa0d6d61ab61d2cc9b/CHANGELOG.md) — статус preview и изменения интерфейса; блок Unreleased не равен выпущенному релизу.
+- [README v7 Preview](https://github.com/bmad-code-org/BMAD-METHOD/blob/61e01f82644c4bb533750cfa0d6d61ab61d2cc9b/README.md) и [История изменений v7 Preview](https://github.com/bmad-code-org/BMAD-METHOD/blob/61e01f82644c4bb533750cfa0d6d61ab61d2cc9b/CHANGELOG.md) — статус preview и изменения интерфейса; блок Unreleased не равен выпущенному релизу.
 
 ---
 
