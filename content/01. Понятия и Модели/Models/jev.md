@@ -1,7 +1,7 @@
 ---
 title: Jev
 tags: [models, structured_output, classification, decision_making]
-aliases: [Jev]
+aliases: [Jev, 01.-понятия-и-модели/jev]
 created: 2026-10-28
 updated: 2026-10-28
 status: time-sensitive
