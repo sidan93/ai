@@ -2,7 +2,7 @@
 tags: [local_ai, tools, backend]
 aliases: [Оллама, Ollama]
 created: 2026-04-15
-updated: 2026-09-14
+updated: 2026-10-28
 status: time-sensitive
 review_after: 2026-12-14
 ---
@@ -66,4 +66,4 @@ review_after: 2026-12-14
 - [[Железо для локальных моделей]]
 - [[Форматы и квантование]]
 - [[Интерфейсы локальных моделей]]
-- [[Top_LLM_Index_2026-09|Выбор моделей]]
+- [[model-selection-2026-10|Выбор моделей]]

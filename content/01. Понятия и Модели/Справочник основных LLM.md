@@ -5,9 +5,9 @@ tags:
   - llm
   - vendors
 created: 2026-04-15
-updated: 2026-09-14
+updated: 2026-10-28
 status: time-sensitive
-review_after: 2026-10-14
+review_after: 2026-11-28
 ---
 
 # Основные ИИ-сервисы и модели
@@ -23,16 +23,16 @@ review_after: 2026-10-14
 | [Claude](https://claude.ai) | Работа с текстом, кодом, документами и длительными агентными задачами | Важны аккуратное редактирование и работа с проектами |
 | [Gemini](https://gemini.google.com) | Мультимодальность и интеграция с сервисами Google | Работа уже живёт в экосистеме Google |
 | [Perplexity](https://perplexity.ai) | Поиск с явными ссылками на веб-источники | Нужен быстрый обзор темы, который потом можно проверить |
-| [DeepSeek](https://chat.deepseek.com) | Доступный чат и недорогой API | Важна стоимость; допустимы его регион и политика данных |
+| [DeepSeek](https://chat.deepseek.com) | Чат и API моделей DeepSeek | Нужна альтернативная линейка; подходят условия доступа и обработки данных |
 | [Le Chat](https://chat.mistral.ai) | Европейский провайдер и модели Mistral | Нужна альтернатива крупным американским платформам |
 
-## Семейства моделей на 14 сентября 2026
+## Семейства моделей на 28 октября 2026
 
-- **OpenAI API:** GPT-6 Astra — флагман для сложного reasoning и кода; GPT-5.6 Terra — баланс возможностей и стоимости; GPT-5.6 Luna — большой поток недорогих запросов. Модель в ChatGPT и API model ID — не одно и то же.
-- **Anthropic:** Claude Opus 5 — универсальная отправная точка; Fable 5.1 — самые сложные долгие задачи; Sonnet 5 и Haiku 4.5 — более быстрые классы.
-- **Google:** Gemini 3.1 Pro, 3.8 Flash и 3.5 Flash-Lite; preview и stable нужно различать.
-- **DeepSeek:** V4 Flash и V4 Pro.
-- **Открытые веса:** выбираются отдельно под железо, движок, лицензию и задачу; см. [[Top_LLM_Index_2026-09]].
+- **OpenAI API:** GPT-6 Astra (`gpt-6-astra`) — флагман для сложного reasoning и кода; GPT-6.1 Sol (`gpt-6.1-sol`) — баланс возможностей и стоимости; GPT-6.1 Terra (`gpt-6.1-terra`) — visual reasoning, computer use и повседневная работа; GPT-6 Luna (`gpt-6-luna`) — узкие массовые задачи. Это позиционирование провайдера; итоговый выбор требует собственного eval. Модель в ChatGPT и API model ID — не одно и то же.
+- **Anthropic:** Claude Fable 5.1, Opus 5.5, Sonnet 5.5 и Haiku 5.5. API IDs: `claude-fable-5-1`, `claude-opus-5-5`, `claude-sonnet-5-5`, `claude-haiku-5-5`. Для сложных задач сравни Fable/Opus, для баланса и массовой обработки — Sonnet/Haiku; проверяй effort и доступность в нужной платформе.
+- **Google:** Gemini 4 Argon (`gemini-4-argon`), Gemini 3.8 Flash (`gemini-3.8-flash`) и Gemini 3.5 Flash-Lite (`gemini-3.5-flash-lite`) обозначены в каталоге как **stable**. Gemini 3.1 Pro доступен как **preview** (`gemini-3.1-pro-preview`); учитывай отдельный жизненный цикл.
+- **DeepSeek:** `deepseek-flash` обслуживается моделью **DeepSeek-V4.1-Flash-1017**; второй текущий API ID — `deepseek-v4-pro`. Старые Flash IDs ещё принимаются, но перенаправляются на новый backend: это не способ закрепить прежнюю модель.
+- **Локальные модели:** Qwen 3.8, Gemma 4, gpt-oss и компактный LFM3-1.7B — кандидаты под разные задачи, ресурсы и лицензии; см. [[model-selection-2026-10|октябрьский выбор моделей]]. Открытые веса не означают одинаковые права использования.
 
 ## Критерии выбора
 
@@ -51,10 +51,11 @@ review_after: 2026-10-14
 - [OpenAI — latest model guidance](https://developers.openai.com/api/docs/guides/latest-model)
 - [Anthropic — models overview](https://platform.claude.com/docs/en/models/overview)
 - [Google — Gemini API documentation](https://ai.google.dev/gemini-api/docs)
+- [Google — model catalog](https://ai.google.dev/gemini-api/docs/models)
 - [DeepSeek — API models](https://api-docs.deepseek.com/quick_start/pricing)
 
 ## Связанные заметки
 
 - [[Справочник LLM API]] — API, цены и правила расчёта.
-- [[Top_LLM_Index_2026-09]] — практический выбор облачных и локальных моделей.
+- [[model-selection-2026-10|Выбор моделей: октябрь 2026]] — текущий shortlist и методика сравнения.
 - [[_Local AI Index]] — локальный запуск.

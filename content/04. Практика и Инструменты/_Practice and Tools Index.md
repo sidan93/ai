@@ -2,7 +2,7 @@
 tags: [MOC, practice, tools, local_ai, coding_agents]
 aliases: [Практика и инструменты, Цех и запуск]
 created: 2026-09-14
-updated: 2026-10-27
+updated: 2026-10-28
 status: evergreen
 ---
 
@@ -32,7 +32,7 @@ status: evergreen
 | Как устроить агента, память, tools и approvals | [[_Agentic Systems Index|Агентные системы]] |
 | Как выбрать framework или runtime приложения | [[_Frameworks Index|Фреймворки]] |
 | Как подключить внешние инструменты | [[_MCP Index|Протоколы MCP]] |
-| Какую облачную или локальную модель тестировать | [[Top_LLM_Index_2026-09|Выбор моделей]] |
+| Какую облачную или локальную модель тестировать | [[model-selection-2026-10|Выбор моделей]] |
 
 ## Принцип раздела
 
