@@ -7,7 +7,7 @@ aliases:
   - Библиотека статей
   - Article Index
 created: 2026-04-16
-updated: 2026-09-14
+updated: 2026-10-28
 status: evergreen
 ---
 
@@ -25,6 +25,7 @@ status: evergreen
 
 ### Архитектуры и исследования
 
+- [[llm-novelty-evaluation|Как LLM оценивают научную новизну]] — краткий пересказ Ai2 о чувствительности judge к prompt и проверочному набору.
 - [[009. 2026-06-25 - RLM - Recursive Language Models]]
 
 ### Агенты, память и harness engineering

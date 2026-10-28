@@ -6,7 +6,7 @@ tags:
 
 title: AI Knowledge Base
 created: 2026-05-21
-updated: 2026-10-27
+updated: 2026-10-28
 status: evergreen
 ---
 
@@ -30,6 +30,7 @@ status: evergreen
 > * 🧭 [[Для начинающих]] — маршрут от основ LLM до первой проверяемой задачи с AI-ассистентом.
 >
 > **📰 Переводы и статьи**
+> * 🔬 [[llm-novelty-evaluation|Как LLM оценивают научную новизну]] — выводы Ai2 об устойчивости novelty judges, влиянии prompt и ограничениях оценки.
 > * 🤖 [[009. 2026-06-25 - RLM - Recursive Language Models]] — декомпозиция контекста через рекурсивные вызовы модели, без перегрузки контекстного окна.
 
 > [!tip] Ключевые события
@@ -90,6 +91,7 @@ status: evergreen
 * [[007. 2026-04-22 - Building Effective Agents - YouTube Talk]]
 * [[008. 2026-04-23 - The 5 Types of AI Agent Memory Part 1 - DEV Community]]
 * [[009. 2026-06-25 - RLM - Recursive Language Models]]
+* [[llm-novelty-evaluation|Как LLM оценивают научную новизну]] — краткий пересказ исследования Ai2.
 
 ---
-**Последнее обновление:** 2026-10-27 | #MOC | [[Политика конфиденциальности]]
+**Последнее обновление:** 2026-10-28 | #MOC | [[Политика конфиденциальности]]
