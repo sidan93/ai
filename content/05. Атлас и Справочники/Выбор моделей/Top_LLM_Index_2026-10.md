@@ -1,7 +1,7 @@
 ---
 title: Model Selection — October 2026
 tags: [models, selection, local_ai, cloud_ai]
-aliases: [Актуальный выбор моделей, Model Selection October 2026]
+aliases: [Актуальный выбор моделей, Model Selection October 2026, model-selection-2026-10, 05.-атлас-и-справочники/выбор-моделей/model-selection-2026-10]
 created: 2026-10-28
 updated: 2026-10-28
 status: time-sensitive
