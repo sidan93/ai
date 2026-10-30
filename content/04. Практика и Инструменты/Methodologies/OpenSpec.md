@@ -125,3 +125,4 @@ Profile **default** включает explore, propose, apply и archive. **Expan
 - [[_Methodologies Index|Methodologies]] — выбор подхода под задачу.
 - [[Рабочий цикл с coding-агентом]] — общий контур изменения и проверки результата.
 - [[superpowers|Superpowers]] — методология выполнения через skills, TDD и review; сравнение фокуса с BMAD и OpenSpec.
+- [[sdd-comparison|Выбор процесса на одной задаче]] — сравнение артефактов, решений человека, проверок и сопровождения требований.
