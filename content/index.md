@@ -6,7 +6,7 @@ tags:
 
 title: AI Knowledge Base
 created: 2026-05-21
-updated: 2026-10-28
+updated: 2026-10-30
 status: evergreen
 ---
 
@@ -20,6 +20,7 @@ status: evergreen
 ## ⚡️ В фокусе (Active Now)
 > [!star] Актуальные проекты и материалы
 > **📄 Страницы**
+> * 🧪 [[superpowers|Superpowers]] — разработка через skills: от согласования дизайна и плана до TDD, review и проверки результата.
 > * 🎯 [[jev|Jev]] — типизированные вероятностные решения через Choice, Score и Noul; смысл confidence и границы применения.
 > * 📐 [[OpenSpec]] — согласование изменения поведения через proposal, specs, design и tasks; обновление требований после реализации.
 > * 🛠️ [[BMAD Method]] — как организовать работу coding-агента через skills, требования, реализацию и ревью; границы автономности и различия версий.
@@ -72,7 +73,7 @@ status: evergreen
 * [[_Practice and Tools Index|Карта раздела]] — что здесь находится и куда вынесены смежные темы.
 * [[_Coding Assistants Index|AI-ассистенты для разработки]] — Codex, Claude Code, permissions, review и рабочий цикл.
 * [[_Local AI Index|Локальный запуск моделей]] — железо, форматы, Ollama, LM Studio и интерфейсы.
-* [[_Methodologies Index|Methodologies]] — BMAD Method, Engineering Loop, OpenSpec и организация разработки с ИИ.
+* [[_Methodologies Index|Methodologies]] — BMAD Method, Engineering Loop, OpenSpec, Superpowers и организация разработки с ИИ.
 
 ### 🗺️ [[_Atlas Index|05. Атлас и справочники]]
 *Карты цен, лимитов и внешние ресурсы.*
@@ -96,4 +97,4 @@ status: evergreen
 * [[llm-novelty-evaluation|Как LLM оценивают научную новизну]] — краткий пересказ исследования Ai2.
 
 ---
-**Последнее обновление:** 2026-10-28 | #MOC | [[Политика конфиденциальности]]
+**Последнее обновление:** 2026-10-30 | #MOC | [[Политика конфиденциальности]]
