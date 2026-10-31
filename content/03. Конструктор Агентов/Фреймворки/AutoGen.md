@@ -1,5 +1,5 @@
 ---
-tags: [framework, agents, multi_agent, microsoft, legacy]
+tags: [framework, agents, multi-agent, microsoft, legacy]
 aliases: [AutoGen]
 created: 2026-04-16
 updated: 2026-09-14

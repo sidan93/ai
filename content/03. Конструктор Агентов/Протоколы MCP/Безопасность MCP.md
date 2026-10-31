@@ -1,9 +1,5 @@
 ---
-tags:
-  - mcp
-  - security
-  - authorization
-  - prompt_injection
+tags: [mcp, security, authorization, prompt-injection]
 aliases:
   - MCP Security
 created: 2026-09-14

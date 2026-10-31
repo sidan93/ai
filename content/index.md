@@ -79,7 +79,7 @@ status: evergreen
 
 ### 🗺️ [[_Atlas Index|05. Атлас и справочники]]
 *Карты цен, лимитов и внешние ресурсы.*
-* [[Справочник LLM API|API Тарифы]] — цены и лимиты провайдеров.
+* [[Справочник LLM API|Выбор и стоимость API]] — расчёт нагрузки, лимиты, условия обработки данных и официальные прайсы.
 * [[Top_LLM_Index_2026-10|Выбор моделей]] — датированный shortlist и методика собственного eval.
 * [[Полезные ссылки|Полезные ссылки]] — внешние закладки и ресурсы.
 
@@ -87,16 +87,9 @@ status: evergreen
 
 ## 📰 [[_Articles Index|10. Статьи и Разборы]]
 *Внешние знания и глубокие аналитические материалы.*
-* [[001. 2026-04-10 - 20 Powerful Agentic-Skills - Explorax Guide]]
-* [[002. 2026-04-15 - Claude Code - Session Management and 1M Context]]
-* [[003. 2026-04-16 - Harness Engineering - Your AI Isnt Stupid - Lychee Blog]]
-* [[004. 2026-04-16 - Prompt Caching]]
-* [[005. 2026-04-21 - The Anatomy of an Agent Harness]]
-* [[006. 2026-04-21 - 7 LLM Generation Parameters]]
-* [[007. 2026-04-22 - Building Effective Agents - YouTube Talk]]
-* [[008. 2026-04-23 - The 5 Types of AI Agent Memory Part 1 - DEV Community]]
-* [[009. 2026-06-25 - RLM - Recursive Language Models]]
 * [[llm-novelty-evaluation|Как LLM оценивают научную новизну]] — краткий пересказ исследования Ai2.
+* [[009. 2026-06-25 - RLM - Recursive Language Models|Recursive Language Models]] — разбор ранних экспериментов с декомпозицией контекста.
+* [[004. 2026-04-16 - Prompt Caching|Кэширование промптов]] — поддерживаемая памятка о механизме и проверке экономии.
 
 ---
 **Последнее обновление:** 2026-10-31 | #MOC | [[Политика конфиденциальности]]

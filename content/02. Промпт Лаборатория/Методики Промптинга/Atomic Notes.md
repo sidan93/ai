@@ -1,8 +1,5 @@
 ---
-tags:
-  - knowledge_management
-  - zettelkasten
-  - context_engineering
+tags: [knowledge-management, zettelkasten, context-engineering]
 aliases:
   - Атомарные заметки
   - Atomicity

@@ -3,7 +3,7 @@ title: Model Selection — October 2026
 tags: [models, selection, local_ai, cloud_ai]
 aliases: [Актуальный выбор моделей, Model Selection October 2026, model-selection-2026-10, 05.-атлас-и-справочники/выбор-моделей/model-selection-2026-10]
 created: 2026-10-28
-updated: 2026-10-28
+updated: 2026-10-31
 status: time-sensitive
 review_after: 2026-11-28
 source_url: https://developers.openai.com/api/docs/models
@@ -13,6 +13,8 @@ source_url: https://developers.openai.com/api/docs/models
 
 > [!abstract] Как выбирать
 > Срез на **28 октября 2026 года**: кандидаты для собственного eval, а не общий рейтинг. Сначала проверь доступность, данные и инструменты, затем сравни качество, задержку и стоимость принятого результата на одинаковых задачах.
+
+Этот срез хранит конкретные API IDs и локальные теги для сравнения. Выбор рабочего сервиса описан в [[Справочник основных LLM|справочнике сервисов]], а расчёт стоимости и проверка лимитов — в [[Справочник LLM API]].
 
 ## Облачный shortlist
 
@@ -70,6 +72,6 @@ source_url: https://developers.openai.com/api/docs/models
 
 ## Связанные материалы
 
-- [[Справочник основных LLM]] — сервисы и семейства моделей.
+- [[Справочник основных LLM]] — сервисы и рабочие сценарии.
 - [[_Local AI Index]] — выбор runtime и локальный запуск.
 - [[Top_LLM_Index_2026-09|Предыдущий срез: сентябрь 2026]] — исторический контекст, не текущая рекомендация.

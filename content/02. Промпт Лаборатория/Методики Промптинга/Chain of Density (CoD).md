@@ -45,4 +45,4 @@ CoD подходит для обзорного абзаца или кратко�
 
 - [From Sparse to Dense: GPT-4 Summarization with Chain of Density Prompting](https://arxiv.org/abs/2309.04269)
 
-См. также: [[Хирург Контекста]], [[Atomic Notes]], [[Iterative Prompting]].
+См. также: [[Хирург Контекста]], [[Atomic Notes]], [[Тестирование промптов|Тестирование и улучшение промптов]].

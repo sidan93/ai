@@ -1,5 +1,5 @@
 ---
-tags: [framework, crewai, agents, multi_agent, workflows]
+tags: [framework, crewai, agents, multi-agent, workflows]
 aliases: [CrewAI]
 created: 2026-04-16
 updated: 2026-09-14
