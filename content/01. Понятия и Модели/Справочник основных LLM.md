@@ -60,6 +60,9 @@ source_url: https://chatgpt.com/
 
 ## Связанные заметки
 
+- [[codex|Codex]] — карта интерфейсов OpenAI для работы с проектом и отличие от Chat/Work.
+- [[claude|Claude]] — разговор, Cowork и Claude Code: как выбрать способ работы.
+
 - [[Справочник LLM API]] — API, цены и правила расчёта.
 - [[Top_LLM_Index_2026-10|Выбор моделей: октябрь 2026]] — текущий shortlist и методика сравнения.
 - [[_Local AI Index]] — локальный запуск.

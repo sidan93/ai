@@ -12,6 +12,8 @@ review_after: 2026-12-14
 > [!abstract] Суть
 > Claude Code — coding-agent Anthropic, доступный через CLI, IDE, desktop и web. CLI читает проект, меняет файлы и запускает команды в пределах выбранного permission mode.
 
+Если пока неясно, чем разговор с Claude отличается от Cowork и Claude Code, начни с [[claude|обзора Claude]]. Здесь — установка и первый сеанс Claude Code CLI.
+
 ## Установка и вход
 
 Для macOS/Linux/WSL официальный native installer:

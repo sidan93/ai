@@ -20,6 +20,7 @@ status: evergreen
 ## ⚡️ В фокусе (Active Now)
 > [!star] Актуальные проекты и материалы
 > **📄 Важные страницы**
+> * 🧭 [[_Practice and Tools Index#Знакомство с Codex и Claude|С чего начать с Codex и Claude]] — выбрать чат, работу с готовым результатом или coding-agent; разобраться с CLI, приложением и местом исполнения.
 > * ⚙️ [[ai-automation|Автоматизация с ИИ]] — один процесс через n8n, Dify и собственный код: от документа и подтверждения до записи, уведомления и восстановления после сбоя.
 > * 🧭 [[sdd-comparison|Как выбрать процесс разработки с ИИ]] — Spec Kit, OpenSpec и BMAD на одной задаче; роль Superpowers, проверки и сопровождение требований.
 > * 🧪 [[superpowers|Superpowers]] — разработка через skills: от согласования дизайна и плана до TDD, review и проверки результата.
@@ -72,6 +73,7 @@ status: evergreen
 ### 🛠️ [[_Practice and Tools Index|04. Практика и инструменты]]
 *Повседневная работа с coding-агентами, локальными моделями, методологиями разработки и автоматизацией рабочих процессов с ИИ.*
 * [[_Practice and Tools Index|Карта раздела]] — что здесь находится и куда вынесены смежные темы.
+* [[codex|Codex]] и [[claude|Claude]] — вводные карты продуктов: что открыть, как поставить первую задачу и проверить результат.
 * [[_Coding Assistants Index|AI-ассистенты для разработки]] — Codex, Claude Code, permissions, review и рабочий цикл.
 * [[_Local AI Index|Локальный запуск моделей]] — железо, форматы, Ollama, LM Studio и интерфейсы.
 * [[_Methodologies Index|Methodologies]] — BMAD Method, Engineering Loop, OpenSpec и Superpowers; практическое сравнение процессов разработки с ИИ.
