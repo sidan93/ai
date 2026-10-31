@@ -88,3 +88,4 @@ generator → evaluator → accept
 - [[Паттерны Агентного Дизайна]]
 - [[LLM-as-a-Judge]]
 - [[Multi-Agent Systems]]
+- [[ai-automation|Автоматизация с ИИ]] — один сквозной процесс через n8n, Dify и собственный код.
