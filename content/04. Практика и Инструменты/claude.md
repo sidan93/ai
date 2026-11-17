@@ -3,7 +3,7 @@ title: Claude
 tags: [claude, claude_code, cowork, beginner, tools]
 aliases: [Claude Guide, Как пользоваться Claude, Клод]
 created: 2026-10-31
-updated: 2026-10-31
+updated: 2026-11-17
 status: time-sensitive
 review_after: 2026-12-01
 source_url: https://support.claude.com/en/articles/8114491-get-started-with-claude
@@ -91,7 +91,8 @@ CLI обычно начинают в папке проекта; первый с�
 
 ## Дальше по базе
 
-- [[Быстрый старт Claude Code]] — установка, первый сеанс и настройки CLI.
+- [[Быстрый старт Claude Code]] — установка, первый сеанс, настройки CLI, ограничения доступа и действия при блокировке.
 - [[Рабочий цикл с coding-агентом]] — постановка задачи, изменения и приёмка.
 - [[Протоколы Автономности]] — полномочия и точки человеческого решения.
 - [[codex|Codex]] — соседняя карта продуктов и способов работы OpenAI.
+

@@ -2,7 +2,7 @@
 tags: [MOC, coding_agents, development, workflow]
 aliases: [AI-ассистенты для разработки, Claude Code: Мастер-индекс, _Claude Code Index]
 created: 2026-04-21
-updated: 2026-10-27
+updated: 2026-11-17
 status: time-sensitive
 review_after: 2026-12-14
 ---
@@ -21,7 +21,7 @@ review_after: 2026-12-14
 
 - [[Рабочий цикл с coding-агентом]] — общий процесс, одинаково полезный для разных продуктов.
 - [[Быстрый старт Codex]] — CLI, вход, `AGENTS.md`, permissions и review.
-- [[Быстрый старт Claude Code]] — CLI, вход, `CLAUDE.md` и permissions.
+- [[Быстрый старт Claude Code]] — CLI, вход, `CLAUDE.md`, permissions, лимиты и блокировки.
 - [[_Methodologies Index|Methodologies]] — BMAD Method, Engineering Loop и выбор процесса разработки с ИИ.
 
 ## Как выбирать инструмент
@@ -57,3 +57,4 @@ review_after: 2026-12-14
 - [[_Skills Index|Skills]]
 - [[_MCP Index]]
 - [[Чек-лист агентной системы]]
+
